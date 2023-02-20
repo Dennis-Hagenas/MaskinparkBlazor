@@ -1,6 +1,6 @@
 ﻿namespace MaskinPark.Shared
 {
-    public class Item
+    public class Machine
     {
 
     }

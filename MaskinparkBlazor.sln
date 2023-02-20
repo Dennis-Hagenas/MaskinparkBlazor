@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaskinparkBlazor", "MaskinparkBlazor\MaskinparkBlazor.csproj", "{4F3DE898-0377-4793-A47A-3F9185414704}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaskinPark.Shared", "MaskinPark.Shared\MaskinPark.Shared.csproj", "{94A185AD-51CF-49AE-9041-F76CDA4F4E0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maskinpark.Shared", "MaskinPark.Shared\Maskinpark.Shared.csproj", "{94A185AD-51CF-49AE-9041-F76CDA4F4E0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
