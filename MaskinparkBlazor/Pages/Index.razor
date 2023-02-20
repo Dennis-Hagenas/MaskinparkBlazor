@@ -2,7 +2,16 @@
 
 <PageTitle>Index</PageTitle>
 
+<MaskinLista></MaskinLista>
 
-Welcome to your new app.
+@code {
+    private IEnumerable<Machine> machines = new List<Machine>();
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    [Inject]
+    public IMaskinparkClient MaskinparkClient { get; set; } = default!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        machines = await MaskinparkClient.GetAsync();
+    }
+}
