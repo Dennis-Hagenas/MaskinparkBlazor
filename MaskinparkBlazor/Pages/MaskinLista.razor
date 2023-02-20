@@ -1,4 +1,6 @@
 ﻿@page "/maskinlista"
+@inject IMaskinparkClient maskinparkClient
+
 <div class="container">
     <div class="card">
         <div class="card-body">
@@ -21,23 +23,32 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>
-                CPU Litografi
-            </td>
+                    @foreach(var machine in machines)
+                    {
+                     <tr>
+                         <td>
+                             @machine.Name
+                         </td>
                         <td>
-                            #005
+                            @machine.Id
                         </td>
-                        <td style="color: lightgreen">
-                            online
-                        </td>
+                    @if (machine.OnlineStatus){
+                            <td style="color: lightgreen">
+                                    @machine.OnlineStatus
+                                </td>
+                            }
+                            else
+                            {
+                            <td style="color: orangered">
+                                    @machine.OnlineStatus
+                                </td>
+                            }
                         <td>
-                            process started
+                        @machine.Message
                         </td>
-
-                    </tr>
-
-        </tbody>
+                       </tr>
+                    }
+         </tbody>
      </table>
 
             @*<p class="card-text">Mon, 12:30 PM, Mostly Sunny</p>

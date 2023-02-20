@@ -2,7 +2,7 @@
 
 <PageTitle>Index</PageTitle>
 
-<MaskinLista></MaskinLista>
+<MaskinLista machines="machines"></MaskinLista>
 
 @code {
     private IEnumerable<Machine> machines = new List<Machine>();
@@ -12,6 +12,8 @@
 
     protected override async Task OnInitializedAsync()
     {
-        machines = await MaskinparkClient.GetAsync();
+        var res = await MaskinparkClient.GetAsync();
+
+        machines = res;
     }
 }
