@@ -1,0 +1,23 @@
+﻿@page "/addmachine"
+
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title font-weight-bold">Add machine</h5>
+    <form id="todoForm">
+        <div class="input-group input-group-lg">
+            <input @bind="test" @bind:event="oninput" type="text" class="form-control" id="todoInput" placeholder="Add Todo..." autofocus />
+            <div class="input-group-append input-group-lg">
+                <button id="addItemBtn" class="btn btn-info">ADD</button>
+            </div>
+        </div>
+            <h4>You typed: @test</h4>
+    </form>
+</div>
+        </div>
+    </div>
+
+@code {
+    public string test { get; set; }
+}

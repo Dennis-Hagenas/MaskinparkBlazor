@@ -20,7 +20,7 @@
                         <th>
                             data bus
                         </th>
-        </tr>
+                    </tr>
     </thead>
     <tbody>
                     @foreach(var machine in machines)
@@ -34,13 +34,13 @@
                         </td>
                     @if (machine.OnlineStatus){
                             <td style="color: lightgreen">
-                                    @machine.OnlineStatus
+                                    On
                                 </td>
                             }
                             else
                             {
                             <td style="color: orangered">
-                                    @machine.OnlineStatus
+                                    Off
                                 </td>
                             }
                         <td>
