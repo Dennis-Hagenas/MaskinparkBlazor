@@ -10,7 +10,7 @@ using MaskinparkBlazor.Shared.Entities;
 
 namespace MaskinparkBlazor.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/machines")]
     [ApiController]
     public class MachinesController : ControllerBase
     {

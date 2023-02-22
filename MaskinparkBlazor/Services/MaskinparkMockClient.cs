@@ -2,7 +2,7 @@
 
 namespace MaskinparkBlazor.Services
 {
-    public class MaskinparkMockClient: IMaskinparkClient
+    public class MaskinparkMockClient//: IMaskinparkClient
     {
         private readonly HttpClient httpClient;
 
