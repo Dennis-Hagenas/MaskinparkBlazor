@@ -9,7 +9,7 @@
         <div class="input-group input-group-lg">
             <input @bind="test" @bind:event="oninput" type="text" class="form-control" id="todoInput" placeholder="Add Todo..." autofocus />
             <div class="input-group-append input-group-lg">
-                <button id="addItemBtn" class="btn btn-info">ADD</button>
+                <button @onclick:preventDefault="true"  id="addItemBtn" class="btn btn-info">ADD</button>
             </div>
         </div>
             <h4>You typed: @test</h4>

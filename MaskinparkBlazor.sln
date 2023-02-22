@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaskinparkBlazor", "Maskinp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaskinparkBlazor.Shared", "MaskinPark.Shared\MaskinparkBlazor.Shared.csproj", "{94A185AD-51CF-49AE-9041-F76CDA4F4E0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaskinparkBlazor.API", "MaskinparkBlazor.API\MaskinparkBlazor.API.csproj", "{39236C26-7EA5-46D3-A10E-C1FD7D3D090C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{94A185AD-51CF-49AE-9041-F76CDA4F4E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94A185AD-51CF-49AE-9041-F76CDA4F4E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94A185AD-51CF-49AE-9041-F76CDA4F4E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39236C26-7EA5-46D3-A10E-C1FD7D3D090C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39236C26-7EA5-46D3-A10E-C1FD7D3D090C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39236C26-7EA5-46D3-A10E-C1FD7D3D090C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39236C26-7EA5-46D3-A10E-C1FD7D3D090C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
