@@ -3,7 +3,7 @@ using System.Net.Http.Json;
 
 namespace MaskinparkBlazor.Services
 {
-    public class MaskinparkClient: IMaskinparkClient
+    public class MaskinparkClient : IMaskinparkClient
     {
         private readonly HttpClient httpClient;
 
@@ -20,9 +20,15 @@ namespace MaskinparkBlazor.Services
         }
 
 
-        public async Task<Machine?> PostAsync(CreateMachine machine)
+        public async Task<Machine?> PostAsync(CreateMachine createmachine)
         {
-            var response = await httpClient.PostAsJsonAsync("api/machines", machine);
+            Machine machine1 = new Machine()
+            {
+                Name = createmachine.Name,
+                OnlineStatus = false,
+                Message = ""
+            };
+            var response = await httpClient.PostAsJsonAsync("api/machines", machine1);
             return response.IsSuccessStatusCode ? await response.Content.ReadFromJsonAsync<Machine>() : null;
         }
 
